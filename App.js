@@ -98,14 +98,14 @@ console.warn = message => {
 async function awakenServerDB(){
   console.log("Got to ajax for awaken db");
 
-  return axios.get("https://cell-detection-database.herokuapp.com/api/awaken");
+  return axios.get("<Heroku awake ping link>");
 
 }
 
 async function saveLink(){
   console.log("Got to ajax for create " + fileName);
 
-  return axios.post("https://cell-detection-database.herokuapp.com/api/create/" + fileName);
+  return axios.post("https://<The Heroku server website>/api/create/" + fileName);
 
 }
 
